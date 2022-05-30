@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Demo from './componants/demo';
+
+<Demo/>
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +21,7 @@ function App() {
           Learn React read
         </a>
       </header>
+      
     </div>
   );
 }
