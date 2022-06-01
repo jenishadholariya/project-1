@@ -1,6 +1,5 @@
 
 import './App.css';
-import Demo from './component/Demo';
 
 function App() {
   
@@ -47,13 +46,33 @@ function App() {
     }
   ];
   
-  
-  console.log(data);
-  
 
   return (
     <div>
-      <Demo/>
+      <table border="1">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Expiry</th>
+        <th>Status</th>
+
+        {
+          data.map((d,i) => {
+            let {id,name,quantity,price,expiry,status}=d;
+              return(
+              <tr>
+              <td>{id}</td>
+              <td>{name}</td>
+              <td>{quantity}</td>
+              <td>{price}</td>
+              <td>{expiry}</td>
+              <td>{status.toString()}</td>
+            </tr>
+            )
+          })
+        }
+      </table>
     </div>
   );
 }
