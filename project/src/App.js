@@ -6,7 +6,7 @@ import Cityfun from './Container/Cityfun';
 const App = () => {
   return (
     <div>
-      <City />
+      <Cityfun />
       
     </div>
   );
