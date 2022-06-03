@@ -14,7 +14,7 @@ function Cityfun (props){
         <div>
             <p>{CityName}</p>
             <button onClick={()=>changeCity()}>Change City</button>
-            {/* <Countryfun Country_Name={this.state.CountryName}/> */}
+            
         </div>
     );
 }
