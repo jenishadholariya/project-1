@@ -5,7 +5,7 @@ function Cityfun (props){
     const [CityName,setCityName]=useState('Surat');
 
         const  changeCity=()=>{
-            setCityName=('Rajkot');
+            setCityName('Rajkot');
         }
     
 
