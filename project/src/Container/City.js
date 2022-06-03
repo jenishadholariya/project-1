@@ -22,6 +22,7 @@ class City extends Component {
             <div>
                 <p>{this.state.CityName}</p>
                 <button onClick={()=>this.changeCity()}>Change City</button>
+                <p>{this.props.id}{this.props.Country_Name}</p>
             </div>
         );
     }
