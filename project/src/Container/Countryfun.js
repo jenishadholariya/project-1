@@ -12,6 +12,7 @@ function Countryfun (props){
             <p>{CountryName}</p>
             <button onClick={() => changeCountry()}>Change Country</button>
             <Country Country_Name={this.state.CountryName}/>
+            <City id="101" Country_Name={this.state.CountryName}/>
         </div>
     );
 }

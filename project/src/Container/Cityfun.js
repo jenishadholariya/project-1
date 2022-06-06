@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Countryfun from './Countryfun';
 
-function Cityfun (props){
+function Cityfun (id,Country_Name){
 
     const [CityName,setCityName]=useState('Surat');
 
@@ -14,7 +14,7 @@ function Cityfun (props){
         <div>
             <p>{CityName}</p>
             <button onClick={()=>changeCity()}>Change City</button>
-            {/* <Countryfun Country_Name={this.state.CountryName}/> */}
+            <p>{props.id}{props.Country_Name}</p>
         </div>
     );
 }
