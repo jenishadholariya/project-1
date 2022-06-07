@@ -49,7 +49,7 @@ class Time extends Component {
 
         return (
             <div>
-                <p>{this.state.time.toLocaleTimeString()}</p>
+                <p>{this.state.time.toString()}</p>
             </div>
         );
     }
