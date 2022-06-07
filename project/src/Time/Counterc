@@ -1,0 +1,35 @@
+import React, { Component } from 'react';
+
+class Counterc extends Component {
+    render() {
+        constructor(props) {
+            super(props);
+            state={
+                counter:0
+            }
+        }
+
+        Increment=()=>{
+            this.setState({
+                counter:this.state.counter+1
+            })
+        }
+
+        Decrement=()=>{
+            this.setState({
+                counter:this.state.counter-1
+            })
+        }
+        
+        return (
+            <div>
+                <h2>Counter {}</h2>
+                <button onClick={() =>this.Increment()}>Increment</button>
+                <p>{this.state.Counter}</p>
+                <button onClick={()=>this.Decrement()}>Decrement</button>
+            </div>
+        );
+    }
+}
+
+export default Counterc;
