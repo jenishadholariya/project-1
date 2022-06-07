@@ -1,30 +1,27 @@
-// import React, { useState, useEffect } from 'react';
-
-// function Counter() {
-//   const [count, setCount] = useState(0);
-
-//   useEffect(() => {
-//     document.title = `You clicked ${count} times`;
-//   });
-
-//   return (
-//     <div>
-//       <p>You clicked {count} times</p>
-//       <button onClick={() => setCount(count + 1)}>
-//         Click me
-//       </button>
-//     </div>
-//   )
-// }
-//   export default Timefun;
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Counter () {
 
+  const[Counter,setCount]=useState(0)
+
+  const Increment = () => {
+    if(Counter < 10){
+      setCount(Counter+1)
+    }
+  }
+
+  const Decrement = () => {
+    if(Counter > 0){
+      setCount(Counter-1)
+    }
+  }
+
   return (
     <div>
-      
+      <h2>Counter {}</h2>
+      <button onClick={() =>Increment()}>Increment</button>
+      <p>{Counter}</p>
+      <button onClick={()=>Decrement()}>Decrement</button>
     </div>
   );
 }
