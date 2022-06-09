@@ -1,20 +1,14 @@
-import React, { useState } from 'react';
-import City from './Container/City';
-import Cityfun from './Container/Cityfun';
-import Country from './Container/Country';
-import Countryfun from './Container/Countryfun';
-import Timefun from './Container/Timefun';
-import Counter from './Time/Counter';
-import Counterc from './Time/Counterc';
-import Time from './Time/Time';
+import React, { useEffect, useState } from 'react';
+import Home from './Container/Home';
+import Loading from './Container/Loading';
 
-//  homewithloading = combine 
 
-// const Homewithloading = (home);
+
+const Homewithloading = Loading(Home)
 
 function App(props){
   
-  const [ loading , setloading ] = useState (false);
+  const [ loading , setLoading ] = useState (false);
 
   const [ data , setData ] = useState ([]);
 
@@ -30,21 +24,19 @@ function App(props){
     }
     
   ]
-  // console.log(orgdata);
 
-  useEffect(() => {
-    setloading(true);
-    setTimeout(()=>{setloading(false);setData()},)
-    setInterval(() => {
-      setloading(false);
-      setData()}
-    , 2000);
-  }, []);
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{setLoading(false);setData(orgdata)},1000)
+  },[])
 
   return (
-    <div>
-      
-    </div>
+   
+      <Homewithloading
+        isloading={loading}
+        data={data}
+      />
+    
   );
 }
 
