@@ -22,7 +22,7 @@ class Counterc extends Component {
         }
         
         return (
-            <div>
+            <div> 
                 <h2>Counter {}</h2>
                 <button onClick={() =>this.Increment()}>Increment</button>
                 <p>{this.state.Counter}</p>
