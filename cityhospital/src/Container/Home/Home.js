@@ -3,12 +3,13 @@ import React from 'react';
 function Home(props) {
     return (
         <>
-        <section id="hero" class="d-flex align-items-center">
-    <div class="container">
-      <h1>Welcome to City Multispeciality Hospital</h1>
-      <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-    </div>
-  </section>
+       <section id="hero" className="d-flex align-items-center">
+  <div className="container">
+    <h1>Welcome to City <br />Multispeciality Hospital</h1>
+    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+  </div>
+</section>
+
         <main id="main">
             <section id="why-us" className="why-us">
             </section>
@@ -263,7 +264,6 @@ function Home(props) {
             </section>
         </main>
         </>
-        
 
     );
 }
