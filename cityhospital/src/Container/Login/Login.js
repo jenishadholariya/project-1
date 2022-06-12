@@ -2,12 +2,13 @@ import React from 'react';
 
 function Login(props) {
     return (
-        <Form>
-            <label>User name/Email
-                <Input name="Email" placeholader="email" type="email"/>
-            </label>
-        </Form>
+        <form>
+            <label>User name/Email</label>
+            <input name="Email" placeholader="email" type="email" />
+            <label>Password</label>
+            <input name="Password" placeholader="Password" type="Password" />
+        </form>
+
     );
 }
-
 export default Login;
